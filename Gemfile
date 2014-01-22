@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
-gem 'sqlite3'                     # DB
 gem 'sass-rails', '~> 4.0.0'      # Stylesheets
 gem 'uglifier', '>= 1.3.0'        # Javascript Compressor
 gem 'coffee-rails', '~> 4.0.0'    # .js.coffee assets and views
@@ -9,6 +8,15 @@ gem 'jquery-rails'                # JS Library
 gem 'turbolinks'                  # Faster Links
 gem 'jbuilder', '~> 1.2'          # JSON API builder
 gem 'bootstrap-sass', '>= 3.0.3'  # UI Pretty
+
+group :development, :test do
+  gem 'sqlite3'                   # DB
+end
+
+group :production do
+  gem 'pg'                        # DB
+  gem 'rails_12factor'            # Logging/static assets for 12-factor provider
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
