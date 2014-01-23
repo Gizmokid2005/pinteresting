@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 1.2'          # JSON API builder
 gem 'bootstrap-sass', '>= 3.0.3'  # UI Pretty
 gem 'devise', '~> 3.2.2'          # User management
 gem 'paperclip', '~> 3.2'         # Image funtimes
+gem 'paperclip-storage-ftp'       # Image Storage
 
 group :development, :test do
   gem 'sqlite3'                   # DB

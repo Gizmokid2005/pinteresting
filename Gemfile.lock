@@ -71,6 +71,8 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    paperclip-storage-ftp (1.1.0)
+      paperclip
     pg (0.17.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -141,6 +143,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   paperclip (~> 3.2)
+  paperclip-storage-ftp
   pg
   rails (= 4.0.2)
   rails_12factor
