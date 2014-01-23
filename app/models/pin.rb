@@ -4,8 +4,8 @@ class Pin < ActiveRecord::Base
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" },
   
   :storage => :ftp,
-  :path => '/public_html/pinteresting/:filename',
-  :url => 'http://img.gizmokid2005.com/pinteresting/:filename',
+  :path => '/public_html/pinteresting/:style/:filename',
+  :url => 'http://img.gizmokid2005.com/pinteresting/:style/:filename',
   :ftp_servers => [
     {
       :host => ENV['FTP_HOST'],
