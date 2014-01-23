@@ -1,4 +1,6 @@
 Pinteresting::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   # Our Homepage
   root "pages#home"
@@ -6,8 +8,6 @@ Pinteresting::Application.routes.draw do
   get "pages/home" # Let's keep the routing to keep /pages/home working
   
   get "about" => "pages#about" # About page!! :-) -- creates about_path
-
-  # get "signup" => "pages#signup" # Signup page
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
