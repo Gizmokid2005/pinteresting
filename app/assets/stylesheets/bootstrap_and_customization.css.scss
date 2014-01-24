@@ -1,7 +1,6 @@
 $body-bg:                     #ecf0f1;
 $navbar-default-bg:           #27ae60;
 $navbar-default-link-color:   white;
-//$brand-primary:               #f39c12;
 $jumbotron-bg:                #bdc3c7;
 
 @import 'bootstrap';
@@ -12,4 +11,21 @@ $jumbotron-bg:                #bdc3c7;
 
 .navbar-brand {
   font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
 }
