@@ -14,6 +14,8 @@ gem 'devise', '~> 3.2.2'          # User management
 gem 'paperclip', '~> 3.2'         # Image funtimes
 gem 'paperclip-storage-ftp'       # Image Storage
 gem 'masonry-rails', '~> 0.2.0'   # Pretty flowy-ness!
+gem 'will_paginate', '~> 3.0'     # Paginate my pages
+gem 'will_paginate-bootstrap'     # Make my paging pretty
 
 group :development, :test do
   gem 'sqlite3'                   # DB
