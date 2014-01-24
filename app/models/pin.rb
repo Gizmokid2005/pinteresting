@@ -15,4 +15,7 @@ class Pin < ActiveRecord::Base
       :passive => true
     }
   ]
+  
+  validates :description, :image, presence: true
+  
 end
