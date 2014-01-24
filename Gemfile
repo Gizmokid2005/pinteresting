@@ -6,8 +6,6 @@ gem 'sass-rails', '~> 4.0.0'      # Stylesheets
 gem 'uglifier', '>= 1.3.0'        # Javascript Compressor
 gem 'coffee-rails', '~> 4.0.0'    # .js.coffee assets and views
 gem 'jquery-rails'                # JS Library
-gem 'turbolinks'                  # Faster Links
-gem 'jquery-turbolinks'           # jQuery
 gem 'jbuilder', '~> 1.2'          # JSON API builder
 gem 'bootstrap-sass', '>= 3.0.3'  # UI Pretty
 gem 'devise', '~> 3.2.2'          # User management
