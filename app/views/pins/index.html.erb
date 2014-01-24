@@ -7,8 +7,18 @@
         <strong><%= pin.user.email if pin.user %></strong>
         <% if pin.user == current_user %>
           <div class="actions">
-            <%= link_to 'Edit', edit_pin_path(pin) %>
-            <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to edit_pin_path(pin) do %>
+              <button type="button" class="btn btn-warning btn-xs">
+                <span class="glyphicon glyphicon-edit"></span>
+                Edit
+              </button>
+            <% end %>
+            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <button type="button" class="btn btn-danger btn-xs">
+                <span class="glyphicon glyphicon-trash"></span>
+                Destroy
+              </button>
+            <% end %>
           </div>
         <% end %>
       </div>

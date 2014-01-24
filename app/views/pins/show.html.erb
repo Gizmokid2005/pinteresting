@@ -6,12 +6,17 @@
     <div class="panel-heading center">
       <%= image_tag @pin.image.url(:medium) %>
     </div>
-      <div class"panel-body">
+      <div class="panel-body">
         <p><%= @pin.description %></p>
         <p><strong><%= @pin.user.email if @pin.user %></strong></p>
         
         <% if @pin.user == current_user %>
-          <%= link_to 'Edit', edit_pin_path(@pin) %>
+          <%= link_to edit_pin_path(@pin) do %>
+            <button type="button" class="btn btn-warning btn-xs">
+              <span class="glyphicon glyphicon-edit"></span>
+              Edit
+            </button>
+          <% end %>
         <% end %>
       </div>
     </div>
