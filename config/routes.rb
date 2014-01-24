@@ -3,7 +3,8 @@ Pinteresting::Application.routes.draw do
 
   devise_for :users
   # Our Homepage
-  root "pages#home"
+  #root "pages#home"
+  root "pins#index"
   
   get "pages/home" # Let's keep the routing to keep /pages/home working
   
